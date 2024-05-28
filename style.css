@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 70px;
+    position: relative;
+    align-items: center;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0%;
+}
+
+.header ul li{
+    text-align: center;
+    padding: 20px 20px;
+    /* float: left;
+    display: inline; */
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li a:hover{
+    border-bottom: 1px solid white;
+    color: tomato;
+    transition: .25s;
+    font-weight: 900;
+}
+
+.logo img{
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+}
+
+.container{
+    background: url(bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 100px 10px;
+    background-attachment: fill;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .percent{
+    font-size: 40px;
+}
+
+.container .fall{
+    font-size: 30px;
+}
+
+.container button{
+    width: 300px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.container button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.container p{
+    opacity: 50%;
+    width: 30%;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "col1 col2 col3";
+    background-color: lightsalmon;
+    padding: 30px 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.grid a{
+    color: black;
+}
+
+.grid>div>h3:hover{
+    color: darkgreen;
+    transform: scale(120%);
+    transition: .25s;
+    cursor: pointer;
+}
+
+.grid img{
+    border-radius: 5px;
+}
+
+.grid>div>img:hover{
+    transform: scale(120%);
+    transition: .25s;
+    cursor: pointer;
+}
+
+.featured{
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-areas: 
+    "fashionista runway logue cq"; */
+    justify-content: center;
+    /* grid-gap: 10%; */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.logos>img{
+    width: 150px;
+    height: 75px;
+    margin: 0px 30px;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 0px;
+}
+
+
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .header{
+        font-size: 15px;
+        overflow: hidden;
+        display: flex;
+        padding: 0 5%;
+    }
+
+    .header .logo{
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .header .navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header ul li{
+        padding: 1px 0;
+        line-height: 18px;
+    }
+    
+    .container{
+        font-size: 1rem;
+    }
+
+    .container .percent{
+        font-size: 15px;
+    }
+    
+    .container .fall{
+        font-size: 20px;
+    }
+
+    .container button{
+        width: 35%;
+        padding: 10px 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: black;
+        color: white;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .container p{
+        opacity: 50%;
+        width: 50%;
+        font-size: 8px;
+    }
+
+    .grid{
+        font-size: 16px;
+    }
+
+
+    .logos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .logos>img{
+        width: 100px;
+        height: 75px;
+        margin: 0px 30px;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+    }
+}
